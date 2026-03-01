@@ -4,8 +4,5 @@
 *.cache
 *.runs
 *.sim
-<<<<<<< HEAD
 .Xil/
-=======
-.Xil/
->>>>>>> 9f126064d63da1be237076b02ce0af7dc6e5cf3e
+
