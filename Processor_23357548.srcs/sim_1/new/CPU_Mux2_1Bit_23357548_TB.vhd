@@ -1,0 +1,116 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 10/27/2025 11:45:28 PM
+-- Design Name: 
+-- Module Name: CPU_Mux2_1Bit_23357548_TB - Sim
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity CPU_Mux2_1Bit_23357548_TB is
+--  Port ( );
+end CPU_Mux2_1Bit_23357548_TB;
+
+architecture Sim of CPU_Mux2_1Bit_23357548_TB is
+COMPONENT CPU_Mux2_1Bit_23357548
+           PORT (
+          ln0 : in std_logic;
+          ln1 : in std_logic;
+          Sel : in std_logic;
+          Z : out std_logic      
+           );
+END COMPONENT;     
+      
+          signal  ln0_TB : std_logic;
+          signal ln1_TB : std_logic;
+         signal  Sel_TB : std_logic;
+         signal  Z_TB : std_logic;
+
+  -- StudentID e.g. 26 33 57 25(DEC) = 1 91 D9 ED(HEX)
+   constant StudentID : STD_LOGIC_VECTOR (27 downto 0) := x"164686C";
+    
+begin
+
+      -- Instantiate the Unit Under Test (UUT)
+  uut:  CPU_Mux2_1Bit_23357548 PORT MAP (
+        ln0 => ln0_TB,
+        ln1 => ln1_TB,
+        Sel => Sel_TB,
+         Z => Z_TB
+       );
+       
+       
+         stim_proc: process
+   begin
+   
+   ln0_TB <= '1';
+   ln1_TB <= '0';
+   Sel_TB <= '0';
+   wait for 250 ns;
+   
+   ln0_TB <= '0';
+   ln1_TB <= '0';
+   Sel_TB <= '0';
+   wait for 250 ns;
+   
+   ln0_TB <= '1';
+   ln1_TB <= '0';
+   Sel_TB <= '0';
+   wait for 250 ns;
+   
+   ln0_TB <= '0';
+   ln1_TB <= '0';
+   Sel_TB <= '0';
+   wait for 250 ns;
+   
+    ln0_TB <= '0';
+   ln1_TB <= '0';
+   Sel_TB <= '1';
+   wait for 250 ns;
+   
+   ln0_TB <= '0';
+   ln1_TB <= '1';
+   Sel_TB <= '1';
+   wait for 250 ns;
+   
+     ln0_TB <= '0';
+   ln1_TB <= '0';
+   Sel_TB <= '1';
+   wait for 250 ns;
+   
+   ln0_TB <= '0';
+   ln1_TB <= '1';
+   Sel_TB <= '1';
+   wait for 250 ns;
+   
+   ln0_TB <= '0';
+   ln1_TB <= '0';
+   Sel_TB <= '1';
+   wait for 250 ns;
+   
+   
+   
+   
+   
+   
+   
+   end process;
+
+
+end Sim;
