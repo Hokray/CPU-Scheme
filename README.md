@@ -2,7 +2,7 @@
 # 32-bit CPU Architecture
 
 ## Overview
-This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate. This project took around 3 months to complete
+This project implements a 32-bit CPU in VHDL using Xilinx Vivado to simulate. This project took around 3 months to complete
 
 ## Components
 - ALU
