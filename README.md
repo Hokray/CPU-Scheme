@@ -28,4 +28,5 @@ This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate. Th
   
 ## Author
 Hakan Okan Okray Sinisterra
+
 Computer Science - Trinity College Dublin
