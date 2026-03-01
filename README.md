@@ -1,8 +1,8 @@
 # CPU-Scheme
-# 16-bit CPU Architecture
+# 32-bit CPU Architecture
 
 ## Overview
-This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate.
+This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate. This project took around 3 months to complete
 
 ## Components
 - ALU
@@ -12,6 +12,8 @@ This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate.
 - Instruction Decoder
 - Random Access Memory
 - Read Only Memory
+- Datapath
+- Functional Unit
 
 ## Features
 - Custom instruction set
@@ -23,7 +25,7 @@ This project implements a 16-bit CPU in VHDL using Xilinx Vivado to simulate.
 - Vivado
 - VHDL
 - Algorithmic State Machine (ASM)
-- 
+  
 ## Author
 Hakan Okan Okray Sinisterra
 Computer Science - Trinity College Dublin
